@@ -1,0 +1,1 @@
+# mercadinho-rapido-mobile
