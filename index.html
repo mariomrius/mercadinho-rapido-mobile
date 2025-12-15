@@ -1,134 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo Móvel</title>
+<title>Mercadinho Rápido Mobile</title>
+
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 10px;
-        background: #f5f5f5;
-    }
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
 
-    h1 {
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
+header{
+    background:#d32f2f;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
 
-    .button {
-        background: #008cff;
-        color: white;
-        padding: 12px 18px;
-        border-radius: 8px;
-        border: none;
-        font-size: 16px;
-        cursor: pointer;
-        margin-bottom: 15px;
-    }
+header p{
+    margin:5px 0 0;
+    font-size:14px;
+}
 
-    .catalogo {
-        display: none;
-        margin-top: 15px;
-    }
+.container{
+    padding:15px;
+}
 
-    .produto {
-        background: white;
-        padding: 10px;
-        margin: 10px auto;
-        width: 90%;
-        max-width: 300px;
-        border-radius: 10px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
+.produto{
+    background:white;
+    border-radius:10px;
+    padding:12px;
+    margin-bottom:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    text-align:center;
+}
 
-    .produto img {
-        width: 100%;
-        height: 160px;
-        object-fit: cover;
-        border-radius: 6px;
-    }
+.produto img{
+    width:100%;
+    max-width:200px;
+    border-radius:8px;
+    margin-bottom:10px;
+}
 
-    .preco {
-        font-size: 18px;
-        font-weight: bold;
-        color: green;
-        margin-top: 6px;
-    }
+.produto h2{
+    font-size:18px;
+    margin:5px 0;
+}
 
-    .pix-box {
-        margin-top: 20px;
-        padding: 10px;
-        background: white;
-        border-radius: 8px;
-        display: inline-block;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
+.preco{
+    font-size:22px;
+    color:#2e7d32;
+    font-weight:bold;
+    margin:8px 0;
+}
+
+.pix-box{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    margin-top:25px;
+}
+
+.pix-box img{
+    margin-top:10px;
+    width:220px;
+}
+
+.botao-pix{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:14px;
+    font-size:18px;
+    border-radius:8px;
+    margin-top:10px;
+    width:100%;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    font-size:13px;
+    color:#555;
+    margin:20px 0 10px;
+}
 </style>
 </head>
+
 <body>
 
-<h1>Catálogo no Carro / Uber</h1>
+<header>
+    <h1>🛒 Mercadinho Rápido Mobile</h1>
+    <p>Produtos disponíveis durante a corrida</p>
+</header>
 
-<button class="button" onclick="abrirCatalogo()">📌 Ver Produtos</button>
+<div class="container">
 
-<div class="catalogo" id="catalogo">
-
-    <!-- Produto 1 -->
     <div class="produto">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2ZmY2MwMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJibGFjayI+VHJpZGVudDwvdGV4dD48L3N2Zz4=">
-        <p>Trident</p>
-        <p class="preco">R$ 5,00</p>
+        <img src="https://i.imgur.com/UqZJ9dR.png">
+        <h2>Trident</h2>
+        <div class="preco">R$ 5,00</div>
     </div>
 
-    <!-- Produto 2 -->
     <div class="produto">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2ZmNjYwMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJibGFjayI+SGFsbHM8L3RleHQ+PC9zdmc+">
-        <p>Bala Halls</p>
-        <p class="preco">R$ 4,00</p>
+        <img src="https://i.imgur.com/jM8nZpC.png">
+        <h2>Bala Halls</h2>
+        <div class="preco">R$ 4,00</div>
     </div>
 
-    <!-- Produto 3 -->
     <div class="produto">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2M4Y2QzZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJibGFjayI+MjEyIFBlcmZ1bWU8L3RleHQ+PC9zdmc+">
-        <p>Perfume 212 Miniatura</p>
-        <p class="preco">R$ 50,00</p>
+        <img src="https://i.imgur.com/1kH6VjT.png">
+        <h2>Perfume 212 (Mini)</h2>
+        <div class="preco">R$ 25,00</div>
     </div>
 
-    <!-- Produto 4 -->
     <div class="produto">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzdiYmJlZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJibGFjayI+Rm9uZTwvdGV4dD48L3N2Zz4=">
-        <p>Fone de Ouvido</p>
-        <p class="preco">R$ 20,00</p>
+        <img src="https://i.imgur.com/XoYp2LH.png">
+        <h2>Fone de Ouvido</h2>
+        <div class="preco">R$ 20,00</div>
     </div>
 
-    <!-- Produto 5 -->
     <div class="produto">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2UwYzRmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJibGFjayI+Q2FibzogQXBwbGU8L3RleHQ+PC9zdmc+">
-        <p>Cabo iPhone</p>
-        <p class="preco">R$ 20,00</p>
+        <img src="https://i.imgur.com/kQYB6vM.png">
+        <h2>Cabo iPhone</h2>
+        <div class="preco">R$ 15,00</div>
     </div>
 
-    <!-- Produto 6 -->
     <div class="produto">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2UyNzdmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJibGFjayI+Q2FibzogVHlwbyBDPC90ZXh0Pjwvc3ZnPg==">
-        <p>Cabo Tipo-C</p>
-        <p class="preco">R$ 20,00</p>
+        <img src="https://i.imgur.com/1K6M6M8.png">
+        <h2>Cabo Tipo C</h2>
+        <div class="preco">R$ 10,00</div>
+    </div>
+
+    <div class="pix-box">
+        <h2>💰 Pagamento via PIX</h2>
+        <p>Escaneie o QR Code abaixo</p>
+
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=00020126360014br.gov.bcb.pix0114+55219733603195204000053039865802BR5922Mario%20Da%20Silva%20Barbosa6009Sao%20Paulo62290525REC6937266EB5C10581200788630428BA">
+
+        <button class="botao-pix" onclick="copiarPix()">Copiar chave PIX</button>
     </div>
 
 </div>
 
-<!-- Área PIX / QR CODE -->
-<div class="pix-box">
-    <p>📌 Pagamento PIX</p>
-    <p>Escaneie abaixo:</p>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=SeuPIXAqui">
-</div>
+<footer>
+    Pagamento rápido • Valores acessíveis • Obrigado pela preferência 🙏
+</footer>
 
 <script>
-function abrirCatalogo(){
-    document.getElementById("catalogo").style.display = "block";
+function copiarPix(){
+    const pix = "00020126360014br.gov.bcb.pix0114+55219733603195204000053039865802BR5922Mario Da Silva Barbosa6009Sao Paulo62290525REC6937266EB5C10581200788630428BA";
+    navigator.clipboard.writeText(pix);
+    alert("Chave PIX copiada!");
 }
 </script>
 
